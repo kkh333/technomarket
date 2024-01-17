@@ -415,6 +415,28 @@ textarea:disabled {
     color: #333;
 }
 
+.search-type-1 {
+    height: 44px;
+}
+.search-type-1 input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #222;
+    padding: 0 44px 0 16px;
+    background: #fff;
+    font-size: 16px;
+    color: #222;
+    border-radius: 999px;
+}
+.search-type-1 input::placeholder {
+    color: #999;
+}
+.search-type-1 .search-btn {
+    width: 20px;
+    right: 16px;
+}
+
 .file-type-1 {
     box-sizing: border-box;
     padding: 0 0 8px 8px;
@@ -502,38 +524,11 @@ textarea:disabled {
 
 /* 헤더 영역 */
 .header-area {
-    height: 80px;
     box-sizing: border-box;
     border-bottom: 1px solid #DBDBDB;
 }
-.header-area .con {
-    max-width: inherit;
-}
 .header-area .left-box .logo-box {
     width: 96px;
-}
-.header-area .left-box .menu-box li a {
-    transition: all 0.3s;
-}
-.header-area .left-box .menu-box li a.active {
-    color: #030095;
-    font-family: "Pretendard-Bold";
-}
-.header-area .left-box .menu-box li a:hover {
-    color: #030095;
-    font-family: "Pretendard-Bold";
-}
-.header-area .right-box .user-name-box > .img-box {
-    border-radius: 50%;
-    height: 28px;
-    overflow: hidden;
-}
-.header-area .right-box .sub-menu-box li a {
-    transition: all 0.3s;
-}
-.header-area .right-box .sub-menu-box li a:hover {
-    color: #333;
-    text-decoration: underline;
 }
 
 /* ------------------------------------------------------------------------------- */

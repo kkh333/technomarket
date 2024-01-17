@@ -37,6 +37,16 @@ var swiper = new Swiper(".swiper-100", {
     },
 });
 
+var swiper = new Swiper(".search-swiper", {
+    direction: "vertical",
+    loop: true,
+    autoplay : {
+        delay : 3000,
+        disableOnInteraction : false,
+        stopOnLastSlide : true
+    },
+});
+
 // 스와이퍼-1
 var swiper = new Swiper(".swiper-1", {
     loop: true,
