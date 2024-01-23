@@ -1,38 +1,10 @@
 /* 메인 비주얼 영역 */
-.main-visual-area {
-    height: calc(100vh - 80px);
+.main-visual-area .swiper-box .swiper .swiper-slide {
+    border-radius: 12px;
     overflow: hidden;
 }
-.main-visual-area .swiper-box .swiper .swiper-slide > img {
-    transition: all 4s;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: block;
-    position: absolute;
-}
-.main-visual-area .swiper-box .swiper .swiper-slide-active  > img {
-    transform: scale(1.2);
-}
-.main-visual-area .swiper-box .swiper .swiper-slide {
-    text-align: left;
-}
-.main-visual-area .swiper-box .swiper .swiper-slide .con {
-    padding-top: 12.5vw;
-}
-.main-visual-area .swiper-box .swiper .swiper-slide .con .text-box h1 {
-    font-size: 4.375vw;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1.5s;
-    transition-delay: 0.3s;
-}
-.main-visual-area .swiper-box .swiper .swiper-slide-active .con .text-box h1 {
-    opacity: 1;
-    transform: translateY(0);
-}
 .main-visual-area .swiper-box .swiper .swiper-pagination {
-    bottom: 2.0833vw !important;
+    bottom: 12px !important;
 }
 .main-visual-area .swiper-box .swiper .swiper-pagination .swiper-pagination-bullet {
     width: 12px !important;

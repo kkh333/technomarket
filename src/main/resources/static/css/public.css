@@ -54,7 +54,7 @@
 /* 공통 */
 body {
     box-sizing: border-box;
-    padding: 80px 0 0 0;
+    padding: 120px 0 0 0;
 }
 
 input:disabled,
@@ -70,6 +70,8 @@ textarea:disabled {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px;
 }
 .top-btn-box.active {
     opacity: 1;
@@ -191,7 +193,7 @@ textarea:disabled {
     font-size: 18px;
     border-radius: 4px;
     color: #fff;
-    background: #030095;
+    background: #005DE8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,9 +206,9 @@ textarea:disabled {
     box-sizing: border-box;
     font-size: 18px;
     border-radius: 4px;
-    color: #030095;
+    color: #005DE8;
     background: inherit;
-    border: 1px solid #030095;
+    border: 1px solid #005DE8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,6 +522,24 @@ textarea:disabled {
     content: url(../img/ico_heart_active.svg);
 }
 
+.interest-box > li > input {
+    display: none;
+}
+.interest-box > li > input + label {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid #E0E0E0;
+    font-size: 14px;
+    color: #999;
+}
+.interest-box > li > input:checked + label {
+    border: 1px solid #005DE8;
+    color: #005DE8;
+}
+
 /* ------------------------------------------------------------------------------- */
 
 /* 헤더 영역 */
@@ -528,7 +548,7 @@ textarea:disabled {
     border-bottom: 1px solid #DBDBDB;
 }
 .header-area .left-box .logo-box {
-    width: 96px;
+    width: 90px;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -536,43 +556,58 @@ textarea:disabled {
 /* 공통 영역 */
 .cnt-area {
     box-sizing: border-box;
-    padding: 9.375vw 0;
-}
-.cnt-area h1.title-text {
-    font-size: 2.7083vw;
-}
-.cnt-area p.title-sub-text {
-    font-size: 1.3541vw;
-    margin-top: 1.25vw;
+    padding-top: 100px;
 }
 
 .login-cnt-area {
-    min-height: calc(100vh - 254px);
+    min-height: calc(100vh - 390px);
     box-sizing: border-box;
-    padding: 6.25vw 0;
+    padding-top: 100px;
 }
 .login-cnt-area .con {
     max-width: 560px;
 }
 .login-cnt-area h1.title-text {
-    font-size: 2.7083vw;
-    margin-bottom: 4.1666vw;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .sub-cnt-area {
-    min-height: calc(100vh - 254px);
+    min-height: calc(100vh - 390px);
     box-sizing: border-box;
-    padding: 6.25vw 0;
+    padding-top: 100px;
 }
 .sub-cnt-area h1.title-text {
-    font-size: 2.7083vw;
-    margin-bottom: 4.1666vw;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
-.matching-detail-area {
-    min-height: calc(100vh - 254px);
-    box-sizing: border-box;
-    padding: 0 0 6.25vw 0;
+/* ------------------------------------------------------------------------------- */
+
+/* 상품 영역 */
+.product-box .swiper-button-prev,
+.product-box .swiper-button-next {
+    transform: translateY(-50%) !important;
+    width: 32px !important;
+    height: 32px !important;
+    margin-top: 0 !important;
+    z-index: 2 !important;
+    border-radius: 50% !important;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px !important;
+}
+.product-box .swiper-button-prev {
+    left: -40px !important;
+    right: auto !important;
+}
+.product-box .swiper-button-next {
+    left: auto !important;
+    right: -40px !important;
+}
+.product-box .swiper-button-prev::before {
+    background: url(../img/arrow_prev_point_030095.svg) no-repeat center center/cover;
+}
+.product-box .swiper-button-next::before {
+    background: url(../img/arrow_next_point_030095.svg) no-repeat center center/cover;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -768,5 +803,5 @@ textarea:disabled {
 
 /* 푸터 영역 */
 .footer-area .logo-box {
-    width: 96px;
+    width: 90px;
 }

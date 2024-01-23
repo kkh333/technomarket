@@ -47,38 +47,40 @@ var swiper = new Swiper(".search-swiper", {
     },
 });
 
-// 스와이퍼-1
-var swiper = new Swiper(".swiper-1", {
+var swiper = new Swiper(".main-swiper", {
     loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    slidesPerView: 1,
-    spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 2,
+    spaceBetween: 20,
     autoplay : {
         delay : 4000,
         disableOnInteraction : false,
         stopOnLastSlide : true
     },
+    centeredSlides: true,
 });
 
-// 스와이퍼-2
-var swiper = new Swiper(".swiper-2", {
-    slidesPerView: "auto",
-    spaceBetween: 12,
+var swiper = new Swiper(".swiper-1", {
+    spaceBetween: 20,
+    slidesPerView: 5,
     navigation: {
-        nextEl: ".swiper-button-next-2",
-        prevEl: ".swiper-button-prev-2",
+        nextEl: ".swiper-button-next-1",
+        prevEl: ".swiper-button-prev-1",
     },
 });
 
-// 스와이퍼-3
-var swiper = new Swiper(".swiper-3", {
-    slidesPerView: "auto",
-    spaceBetween: 12,
+var swiper = new Swiper(".swiper-2", {
+    spaceBetween: 20,
+    slidesPerView: 5,
     navigation: {
-        nextEl: ".swiper-button-next-3",
-        prevEl: ".swiper-button-prev-3",
+        nextEl: ".swiper-button-next-2",
+        prevEl: ".swiper-button-prev-2",
     },
 });
