@@ -47,8 +47,13 @@ public class HomeController {
         return "sales_post_form";
     }
 
+    @GetMapping("/spd")
+    public String spd() {
+        return "sales_post_detail";
+    }
+
     @GetMapping("/c")
-    public String component() {
-        return "component";
+    public String c() {
+        return "chat";
     }
 }

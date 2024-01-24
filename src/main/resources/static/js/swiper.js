@@ -67,6 +67,21 @@ var swiper = new Swiper(".main-swiper", {
     centeredSlides: true,
 });
 
+var swiper = new Swiper(".product-detail-swiper", {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay : {
+        delay : 4000,
+        disableOnInteraction : false,
+        stopOnLastSlide : true
+    },
+});
+
 var swiper = new Swiper(".swiper-1", {
     spaceBetween: 20,
     slidesPerView: 5,

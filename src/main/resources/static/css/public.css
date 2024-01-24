@@ -624,23 +624,28 @@ textarea:disabled {
 /* ------------------------------------------------------------------------------- */
 
 /* 상품 영역 */
-.product-box .swiper-slide > a {
+.product-swiper-box .swiper-slide > a {
     width: 100%;
 }
-.product-box .swiper-slide > a > .img-box {
+.product-swiper-box .swiper-slide > a > .img-box {
     box-sizing: border-box;
     padding-bottom: 100%;
     position: relative;
+    overflow: hidden;
 }
-.product-box .swiper-slide > a > .img-box > img {
+.product-swiper-box .swiper-slide > a > .img-box > img {
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 0.5s;
 }
-.product-box .swiper-button-prev,
-.product-box .swiper-button-next {
+.product-swiper-box .swiper-slide > a:hover > .img-box > img {
+    transform: scale(1.2);
+}
+.product-swiper-box .swiper-button-prev,
+.product-swiper-box .swiper-button-next {
     transform: translateY(-50%) !important;
     width: 32px !important;
     height: 32px !important;
@@ -649,18 +654,18 @@ textarea:disabled {
     border-radius: 50% !important;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.15) 0px 8px 30px !important;
 }
-.product-box .swiper-button-prev {
+.product-swiper-box .swiper-button-prev {
     left: -40px !important;
     right: auto !important;
 }
-.product-box .swiper-button-next {
+.product-swiper-box .swiper-button-next {
     left: auto !important;
     right: -40px !important;
 }
-.product-box .swiper-button-prev::before {
+.product-swiper-box .swiper-button-prev::before {
     background: url(../img/arrow_prev_point_030095.svg) no-repeat center center/cover;
 }
-.product-box .swiper-button-next::before {
+.product-swiper-box .swiper-button-next::before {
     background: url(../img/arrow_next_point_030095.svg) no-repeat center center/cover;
 }
 

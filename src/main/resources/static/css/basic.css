@@ -64,6 +64,7 @@ body.active {overflow-y: hidden;}
 .ais {align-items: flex-start;}
 .aic {align-items: center;}
 .aie {align-items: flex-end;}
+.aib {align-items: baseline;}
 .jcs {justify-content: flex-start;}
 .jcc {justify-content: center;}
 .jce {justify-content: flex-end;}
